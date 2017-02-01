@@ -24,18 +24,31 @@ I was able to build and launch the project, BUT breakpoints were ignored and I g
 
 Here is the Solution for that isue:
 
+
 To enable debugging :
+
 1) Project->HelloWorld Properties
+
 2) "Configuration Properties -> C/C++ -> General"
+
 3) On the right, change "Debug Information Format" to "Program Database For Edit And Continue (/ZI)"
+
 4) "Configuration Properties -> C/C++ -> Optimization"
+
 5) On the right, change "Optimization" to "Disabled (/Od)"
+
 6) "Configuration Properties -> C/C++ -> Linker"
+
 7) On the left, select "Debugging"
+
 8) On the right, change "Generate Debug Info" to "Yes"
+
 9) Click ok
+
 10) Set your breakpoints
+
 11) Rebuild your application
+
 
 Also when running your application use Ctrl + F5 to build and run it, this keeps the console window open long enough for you to see your output.
 
